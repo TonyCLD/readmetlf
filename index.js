@@ -34,6 +34,10 @@ const questions = [
     {
         name: 'questions',
         message: 'Please enter the email you would like users to email you questions.'
+    },
+    {
+        name: 'githubname',
+        message: 'Please enter your github name.'
     }
 ];
 
@@ -78,22 +82,7 @@ License: ${data.license}
 
 Contributors: ${data.contributors}  
 
-If you have any questions, you can reach me at this email: [link](mailto:${data.questions}).
+If you have any questions, you can reach me at this email: [link](mailto:${data.questions}). Or visit my github profile page [link] (https://github.com/${data.githubname}).
 
 `;
 }
-
-// module.exports = generateMarkdown;
-
-
-// fs.writeFile(fileName, fileData, (err) => 
-// err ? console.err(err) : console.log(fileData)
-// );
-
-// fs.writeFile('readme.md', content, err => {
-//     if (err) {
-//       console.error(err);
-//     }
-//     // file written successfully
-//   });
-
